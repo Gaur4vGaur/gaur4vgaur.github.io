@@ -31,8 +31,7 @@
 
     <script>
       function myFunction(shouldUse, sheetId) {
-        console.log(sheetId);
-        console.log(shouldUse);
+        document.getElementById("navbarNavDropdown").className = "collapse navbar-collapse";
         if (shouldUse) {
           var prev = "<iframe src='https://docs.google.com/spreadsheets/u/2/d/e/2PACX-1vRYM2vb7muFaMu-u7xmc5gEPb5y3IbJt0Wa1i6pFJtWW7vV2VL-9Ijp1xFazjWoouAbr5TCwW5sE3TL/pubhtml?gid=";
           var post = "&amp;single=true&amp;headers=false&amp;chrome=false&amp;widget=false' style='height:94%;width:100%;border:none;display: block;'></iframe>";
@@ -47,7 +46,6 @@
       function loadSheet() {
         var hs = window.location.hash;
         var sheetId = hs.substring(1, hs.length);
-        console.log(sheetId);
         if(sheetId == "labmap") {
           myFunction(false, sheetId);
         } else if(hs.length > 2) {
