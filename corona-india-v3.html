@@ -1,0 +1,71 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="title" content="India fights coronavirus">
+    <meta name="keywords" content="coronavirus,corona,covid,covid19,covid-19,covidindia,india,virus">
+    <meta name="description" content="Statistics and tracking the number of confirmed cases, recovered patients, and death tolls in India due to the COVID 19 coronavirus from Wuhan, China. Coronavirus counter with new cases, historical data, and info. Daily charts, graphs, updates as per mohfw.gov.in">
+    <title>India Fights Coronavirus</title>
+
+    <meta property='og:site_name' content='India Fights Coronavirus'/>
+    <meta property="og:title" content="Corona Virus updates across India" />
+    <meta property="og:description" content="Volunteer driven analysis of state wise data for Active, Cured and Deaths">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://gaur4vgaur.github.io/corona-india">
+    <meta property="og:image" content="https://raw.githubusercontent.com/Gaur4vGaur/gaur4vgaur.github.io/master/sample-chart.png" />
+
+    <meta property="twitter:url" content="https://gaur4vgaur.github.io/corona-india">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-162427596-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+  
+      gtag('config', 'UA-162427596-1');
+    </script>
+
+    <script>
+      function myFunction(sheetId) {
+        var iframe = document.getElementById("sheet");
+        iframe.src = "https://gaur4vgaur.github.io/corona-india-"+sheetId+".html";
+      }
+    </script>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
+  </head>
+
+  <body style="overflow-y: hidden">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#" onclick="myFunction('total')">India Fights Corona</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+
+        <ul class="nav navbar-nav mr-auto">
+          <li class="nav-item"><a class="nav-link" href="#" onclick="myFunction('states')">States</a></li>
+          <li class="nav-item"><a class="nav-link" href="#" onclick="myFunction('cured')">Cured</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+        </ul>
+
+      </div>
+    </nav>
+
+    <iframe id="sheet" src="https://gaur4vgaur.github.io/corona-india-total.html" style="height:95%;width:100%;"></iframe>
+
+
+
+
+
+
+
+  </body>
+</html>

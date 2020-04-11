@@ -1,0 +1,94 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="title" content="India fights coronavirus">
+    <meta name="keywords" content="coronavirus,corona,covid,covid19,covid-19,covidindia,india,virus">
+    <meta name="description" content="Statistics and tracking the number of confirmed cases, recovered patients, and death tolls in India due to the COVID 19 coronavirus from Wuhan, China. Coronavirus counter with new cases, historical data, and info. Daily charts, graphs, updates as per mohfw.gov.in">
+    <title>India Fights Coronavirus</title>
+
+    <meta property='og:site_name' content='India Fights Coronavirus'/>
+    <meta property="og:title" content="Corona Virus updates across India" />
+    <meta property="og:description" content="Volunteer driven analysis of state wise data for Active, Cured and Deaths">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://gaur4vgaur.github.io/corona-india">
+    <meta property="og:image" content="https://raw.githubusercontent.com/Gaur4vGaur/gaur4vgaur.github.io/master/sample-chart.png" />
+
+    <meta property="twitter:url" content="https://gaur4vgaur.github.io/corona-india">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-162427596-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+  
+      gtag('config', 'UA-162427596-1');
+    </script>
+
+    <script>
+      function myFunction(shouldUse, sheetId) {
+        console.log(sheetId);
+        console.log(shouldUse);
+        if (shouldUse) {
+          var prev = "<iframe src='https://docs.google.com/spreadsheets/u/2/d/e/2PACX-1vRYM2vb7muFaMu-u7xmc5gEPb5y3IbJt0Wa1i6pFJtWW7vV2VL-9Ijp1xFazjWoouAbr5TCwW5sE3TL/pubhtml?gid=";
+          var post = "&amp;single=true&amp;headers=false&amp;chrome=false&amp;widget=false' style='height:94%;width:100%;border:none;display: block;'></iframe>";
+          document.getElementById("sheetdiv").innerHTML = prev + sheetId + post; 
+        } else if(sheetId == "labmap"){
+          console.log("should diplay map");
+          document.getElementById("sheetdiv").innerHTML = '<iframe src="https://www.google.com/maps/d/embed?mid=1YfaJKmfs2xnuqXjOyHXxVR6ZFZtZnU6N" width="100%" height="94%"></iframe>'; 
+        }
+        
+      }
+
+      function loadSheet() {
+        var hs = window.location.hash;
+        var sheetId = hs.substring(1, hs.length);
+        console.log(sheetId);
+        if(sheetId == "labmap") {
+          myFunction(false, sheetId);
+        } else if(hs.length > 2) {
+          myFunction(true, sheetId);
+        }      
+      }
+    </script>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
+  </head>
+
+  <body style="overflow-y: hidden" onload="loadSheet()">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#" onclick="myFunction('0')">India Fights Corona</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+
+        <ul class="nav navbar-nav mr-auto">
+          <li class="nav-item"><a class="nav-link" href="#" onclick="myFunction(true, '1423151127')">States</a></li>
+          <li class="nav-item"><a class="nav-link" href="#" onclick="myFunction(true, '727449280')">Cured</a></li>
+          <li class="nav-item"><a class="nav-link" href="#" onclick="myFunction(true, '856788577')">Deaths</a></li>
+          <li class="nav-item"><a class="nav-link" href="#" onclick="myFunction(false, 'labmap')">COVID Test Labs</a></li>
+          <li class="nav-item"><a class="nav-link" href="#" onclick="myFunction(true, '1405645860')">Awareness</a></li>
+          <li class="nav-item"><a class="nav-link" href="#" onclick="myFunction(true, '1516025298')">Immunity Boost</a></li>
+          <li class="nav-item"><a class="nav-link" href="#" onclick="myFunction(true, '336399716')">DIY Masks</a></li>
+          <li class="nav-item"><a class="nav-link" href="#" onclick="myFunction(true, '565791286')">Helplines</a></li>
+          <li class="nav-item"><a class="nav-link" href="#" onclick="myFunction(true, '1140333024')">About Me</a></li>
+          <li class="nav-item"><a class="nav-link" href="#" onclick="myFunction(true, '1720937659')">Abbreviations</a></li>
+        </ul>
+
+      </div>
+    </nav>
+
+    <div id="sheetdiv" style="border-style: solid;">
+      <iframe id="sheet" src="https://docs.google.com/spreadsheets/u/2/d/e/2PACX-1vRYM2vb7muFaMu-u7xmc5gEPb5y3IbJt0Wa1i6pFJtWW7vV2VL-9Ijp1xFazjWoouAbr5TCwW5sE3TL/pubhtml?gid=0&amp;single=true&amp;headers=false&amp;chrome=false&amp;widget=false" style="height:94%;width:100%;border:none;display: block;"></iframe>
+    </div>
+    
+  </body>
+</html>
