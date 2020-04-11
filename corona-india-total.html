@@ -28,18 +28,7 @@
     gtag('config', 'UA-162427596-1');
   </script>
 
-  <script>
-    function loadSheet() {
-      var iframe = document.getElementById("sheet");
-      var hs = window.location.hash
-      if(hs.length > 2) {
-        var sheetId = hs.substring(1, hs.length);
-        iframe.src = "https://docs.google.com/spreadsheets/u/2/d/e/2PACX-1vRYM2vb7muFaMu-u7xmc5gEPb5y3IbJt0Wa1i6pFJtWW7vV2VL-9Ijp1xFazjWoouAbr5TCwW5sE3TL/pubhtml?gid=" + sheetId;
-      }      
-    }
-  </script>
-
 </head>
-<body onload="loadSheet()">
-  <iframe id="sheet" src="https://docs.google.com/spreadsheets/u/2/d/e/2PACX-1vRYM2vb7muFaMu-u7xmc5gEPb5y3IbJt0Wa1i6pFJtWW7vV2VL-9Ijp1xFazjWoouAbr5TCwW5sE3TL/pubhtml#" style="height:100%;width:100%;border:none;display: block;"></iframe>
+<body>      
+  <iframe id="sheet" src="https://docs.google.com/spreadsheets/u/2/d/e/2PACX-1vRYM2vb7muFaMu-u7xmc5gEPb5y3IbJt0Wa1i6pFJtWW7vV2VL-9Ijp1xFazjWoouAbr5TCwW5sE3TL/pubhtml?gid=0&amp;single=true&amp;headers=false&amp;chrome=false&amp;widget=false" style="height:100%;width:100%;border:none;display: block;"></iframe>
 </body>
