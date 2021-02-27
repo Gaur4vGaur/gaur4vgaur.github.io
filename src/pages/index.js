@@ -22,7 +22,7 @@ class BlogIndex extends React.Component {
             </div>
             <div className="post-summary">
               <p>Feb 27th, 2021</p>
-              <h2>Cheese on toast babybel babybel</h2>
+              <h2>Meaningful on toast babybel babybel</h2>
               <p>
                 Pecorino fondue manchego who moved my cheese babybel hard cheese
                 fromage roquefort. Roquefort port-salut cheeseburger cheese on
