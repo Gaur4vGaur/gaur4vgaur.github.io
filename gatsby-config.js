@@ -2,6 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Blog Starter`,
     author: `Gaurav Gaur`,
+    bio: `Gaurav Gaur Bio`,
     description: `A blog that shows you the awesome power of gatsby.`,
     social: {
       twitter: `gaur4vgaur`,
@@ -13,6 +14,11 @@ module.exports = {
       options: {
         path: `${__dirname}/content/assets`,
         name: `assets`,
+      },
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/content/posts`,
+        name: `blogPosts`,
       },
       resolve: `gatsby-plugin-google-analytics`,
       options: {
