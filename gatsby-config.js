@@ -4,7 +4,7 @@ module.exports = {
     author: `Gaurav Gaur`,
     description: `A blog that shows you the awesome power of gatsby.`,
     social: {
-      twitter: `coding_love`,
+      twitter: `gaur4vgaur`,
     },
   },
   plugins: [
@@ -13,6 +13,13 @@ module.exports = {
       options: {
         path: `${__dirname}/content/assets`,
         name: `assets`,
+      },
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        // The property ID; the tracking code won't be generated without it
+        trackingId: "UA-162427596-1",
+        // Defines where to place the tracking script - `true` in the head and `false` in the body
+        head: true,
       },
     },
     {
