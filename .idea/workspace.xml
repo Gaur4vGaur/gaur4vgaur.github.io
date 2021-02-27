@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e507af4a-ccd4-404e-9f23-38bd9a319e5c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/pages/404.js" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1p4fjGHVyAu0BYzTel5vfwVxO9U" />
+  <component name="ProjectViewState">
+    <option name="abbreviatePackageNames" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/content/assets" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e507af4a-ccd4-404e-9f23-38bd9a319e5c" name="Default Changelist" comment="" />
+      <created>1614447416650</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1614447416650</updated>
+      <workItem from="1614447418092" duration="7032000" />
+      <workItem from="1614456522855" duration="118000" />
+      <workItem from="1614456652556" duration="36000" />
+      <workItem from="1614464268450" duration="58000" />
+      <workItem from="1614464358186" duration="588000" />
+      <workItem from="1614469441494" duration="222000" />
+    </task>
+    <task id="LOCAL-00001" summary="added gatsby code">
+      <created>1614448459577</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1614448459577</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Merge branch 'master' into 20210227-gatsby-trial&#10;&#10;# Conflicts:&#10;#&#9;.gitignore">
+      <created>1614448628371</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1614448628371</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Merge branch 'master' into 20210227-gatsby-trial&#10;&#10;# Conflicts:&#10;#&#9;.gitignore">
+      <created>1614449102088</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1614449102088</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Merge branch 'master' into 20210227-gatsby-trial&#10;&#10;# Conflicts:&#10;#&#9;.gitignore">
+      <created>1614449254712</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1614449254712</updated>
+    </task>
+    <task id="LOCAL-00005" summary="get rid of uknown files">
+      <created>1614450285981</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1614450285981</updated>
+    </task>
+    <task id="LOCAL-00006" summary="add gatsby files">
+      <created>1614450436264</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1614450436264</updated>
+    </task>
+    <task id="LOCAL-00007" summary="update deploy script">
+      <created>1614450673253</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1614450673253</updated>
+    </task>
+    <task id="LOCAL-00008" summary="added other steps to deploy">
+      <created>1614450725343</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1614450725343</updated>
+    </task>
+    <task id="LOCAL-00009" summary="added contents folder">
+      <created>1614450985723</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1614450985723</updated>
+    </task>
+    <task id="LOCAL-00010" summary="added contents folder">
+      <created>1614453595316</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1614453595316</updated>
+    </task>
+    <task id="LOCAL-00011" summary="dummy change">
+      <created>1614453914221</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1614453914221</updated>
+    </task>
+    <task id="LOCAL-00012" summary="dummy change">
+      <created>1614454196952</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1614454196952</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Merge branch 'working-gatsby-branch'&#10;&#10;# Conflicts:&#10;#&#9;404.html&#10;#&#9;404/index.html&#10;#&#9;chunk-map.json&#10;#&#9;index.html&#10;#&#9;offline-plugin-app-shell-fallback/index.html&#10;#&#9;page-data/app-data.json&#10;#&#9;sw.js&#10;#&#9;webpack-runtime-8e1d88c5cbd2d35dcb18.js&#10;#&#9;webpack-runtime-8e1d88c5cbd2d35dcb18.js.map&#10;#&#9;webpack.stats.json">
+      <created>1614454324314</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1614454324314</updated>
+    </task>
+    <task id="LOCAL-00014" summary="add google analytics">
+      <created>1614455905822</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1614455905822</updated>
+    </task>
+    <task id="LOCAL-00015" summary="add google analytics">
+      <created>1614455938899</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1614455938899</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Merge branch 'working-gatsby-branch'&#10;&#10;# Conflicts:&#10;#&#9;gatsby-config.js&#10;#&#9;package-lock.json&#10;#&#9;package.json">
+      <created>1614456037617</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1614456037617</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Merge branch 'working-gatsby-branch'&#10;&#10;# Conflicts:&#10;#&#9;gatsby-config.js&#10;#&#9;package-lock.json&#10;#&#9;package.json">
+      <created>1614456268655</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1614456268655</updated>
+    </task>
+    <task id="LOCAL-00018" summary="add content.png">
+      <created>1614456369440</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1614456369440</updated>
+    </task>
+    <task id="LOCAL-00019" summary="refresh contents">
+      <created>1614464610196</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1614464610196</updated>
+    </task>
+    <task id="LOCAL-00020" summary="remove hard codings">
+      <created>1614469620948</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1614469620948</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="1">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="structure">
+                    <value>
+                      <list>
+                        <option value="dir:/home/gauravgaur/1My/study/projects/gaur4vgaur.github.io/offline-plugin-app-shell-fallback" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+        <entry key="2">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="structure">
+                    <value>
+                      <list>
+                        <option value="dir:/home/gauravgaur/1My/study/projects/gaur4vgaur.github.io/page-data" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+        <entry key="3">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="1" value="TOOL_WINDOW" />
+        <entry key="2" value="TOOL_WINDOW" />
+        <entry key="3" value="TOOL_WINDOW" />
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="added gatsby code" />
+    <MESSAGE value="Merge branch 'master' into 20210227-gatsby-trial&#10;&#10;# Conflicts:&#10;#&#9;.gitignore" />
+    <MESSAGE value="get rid of uknown files" />
+    <MESSAGE value="add gatsby files" />
+    <MESSAGE value="update deploy script" />
+    <MESSAGE value="added other steps to deploy" />
+    <MESSAGE value="added contents folder" />
+    <MESSAGE value="dummy change" />
+    <MESSAGE value="Merge branch 'working-gatsby-branch'&#10;&#10;# Conflicts:&#10;#&#9;404.html&#10;#&#9;404/index.html&#10;#&#9;chunk-map.json&#10;#&#9;index.html&#10;#&#9;offline-plugin-app-shell-fallback/index.html&#10;#&#9;page-data/app-data.json&#10;#&#9;sw.js&#10;#&#9;webpack-runtime-8e1d88c5cbd2d35dcb18.js&#10;#&#9;webpack-runtime-8e1d88c5cbd2d35dcb18.js.map&#10;#&#9;webpack.stats.json" />
+    <MESSAGE value="add google analytics" />
+    <MESSAGE value="Merge branch 'working-gatsby-branch'&#10;&#10;# Conflicts:&#10;#&#9;gatsby-config.js&#10;#&#9;package-lock.json&#10;#&#9;package.json" />
+    <MESSAGE value="add content.png" />
+    <MESSAGE value="refresh contents" />
+    <MESSAGE value="remove hard codings" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove hard codings" />
+  </component>
+</project>
