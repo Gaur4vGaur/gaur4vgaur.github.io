@@ -11,7 +11,7 @@ class BlogIndex extends React.Component {
           <section>
             <div className="post-summary">
               <p>Feb 27th, 2021</p>
-              <h2>Meaningful blog title</h2>
+              <h2>Meaningful blog titles</h2>
               <p>
                 Cheese and wine rubber cheese airedale cottage cheese the big
                 cheese stinking bishop cheesecake st. agur blue cheese. Cow
