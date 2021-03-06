@@ -1,0 +1,316 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style id="typography.js">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:112.5%/1.666 'Open Sans','Georgia',serif;box-sizing:border-box;overflow-y:scroll;}*{box-sizing:inherit;}*:before{box-sizing:inherit;}*:after{box-sizing:inherit;}body{color:hsla(0,0%,0%,0.8);font-family:'Open Sans','Georgia',serif;font-weight:normal;word-wrap:break-word;font-kerning:normal;-moz-font-feature-settings:"kern", "liga", "clig", "calt";-ms-font-feature-settings:"kern", "liga", "clig", "calt";-webkit-font-feature-settings:"kern", "liga", "clig", "calt";font-feature-settings:"kern", "liga", "clig", "calt";}img{max-width:100%;margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.666rem;}h1{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.666rem;color:inherit;font-family:'Open Sans','Avenir Next','Helvetica Neue','Segoe UI','Helvetica','Arial',sans-serif;font-weight:bold;text-rendering:optimizeLegibility;font-size:2rem;line-height:1.1;}h2{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.666rem;color:inherit;font-family:'Open Sans','Avenir Next','Helvetica Neue','Segoe UI','Helvetica','Arial',sans-serif;font-weight:bold;text-rendering:optimizeLegibility;font-size:1.51572rem;line-height:1.1;}h3{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.666rem;color:inherit;font-family:'Open Sans','Avenir Next','Helvetica Neue','Segoe UI','Helvetica','Arial',sans-serif;font-weight:bold;text-rendering:optimizeLegibility;font-size:1.31951rem;line-height:1.1;}h4{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.666rem;color:inherit;font-family:'Open Sans','Avenir Next','Helvetica Neue','Segoe UI','Helvetica','Arial',sans-serif;font-weight:bold;text-rendering:optimizeLegibility;font-size:1rem;line-height:1.1;}h5{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.666rem;color:inherit;font-family:'Open Sans','Avenir Next','Helvetica Neue','Segoe UI','Helvetica','Arial',sans-serif;font-weight:bold;text-rendering:optimizeLegibility;font-size:0.87055rem;line-height:1.1;}h6{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.666rem;color:inherit;font-family:'Open Sans','Avenir Next','Helvetica Neue','Segoe UI','Helvetica','Arial',sans-serif;font-weight:bold;text-rendering:optimizeLegibility;font-size:0.81225rem;line-height:1.1;}hgroup{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.666rem;}ul{margin-left:1.666rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.666rem;list-style-position:outside;list-style-image:none;}ol{margin-left:1.666rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.666rem;list-style-position:outside;list-style-image:none;}dl{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.666rem;}dd{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.666rem;}p{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.666rem;}figure{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.666rem;}pre{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.666rem;font-size:0.85rem;line-height:1.666rem;}table{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.666rem;font-size:1rem;line-height:1.666rem;border-collapse:collapse;width:100%;}fieldset{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.666rem;}blockquote{margin-left:1.666rem;margin-right:1.666rem;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.666rem;}form{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.666rem;}noscript{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.666rem;}iframe{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.666rem;}hr{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:calc(1.666rem - 1px);background:hsla(0,0%,0%,0.2);border:none;height:1px;}address{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.666rem;}b{font-weight:bold;}strong{font-weight:bold;}dt{font-weight:bold;}th{font-weight:bold;}li{margin-bottom:calc(1.666rem / 2);}ol li{padding-left:0;}ul li{padding-left:0;}li > ol{margin-left:1.666rem;margin-bottom:calc(1.666rem / 2);margin-top:calc(1.666rem / 2);}li > ul{margin-left:1.666rem;margin-bottom:calc(1.666rem / 2);margin-top:calc(1.666rem / 2);}blockquote *:last-child{margin-bottom:0;}li *:last-child{margin-bottom:0;}p *:last-child{margin-bottom:0;}li > p{margin-bottom:calc(1.666rem / 2);}code{font-size:0.85rem;line-height:1.666rem;}kbd{font-size:0.85rem;line-height:1.666rem;}samp{font-size:0.85rem;line-height:1.666rem;}abbr{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}acronym{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}abbr[title]{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;text-decoration:none;}thead{text-align:left;}td,th{text-align:left;border-bottom:1px solid hsla(0,0%,0%,0.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding-left:1.11067rem;padding-right:1.11067rem;padding-top:0.833rem;padding-bottom:calc(0.833rem - 1px);}th:first-child,td:first-child{padding-left:0;}th:last-child,td:last-child{padding-right:0;}</style><style data-href="/styles.2276dc1f9a47f1226d4e.css" id="gatsby-global-css">.blog-container{display:flex}.blog-container section{border-right:1px solid #d3d3d3;flex:0 0 65%;padding:2rem 2rem 0 0}.post-summary{margin-bottom:2rem}.post-summary p:first-child{color:#a0a0a0;font-size:14px;font-weight:lighter;margin-bottom:1rem}.post-summary .content p{color:#333;font-size:18px;font-weight:lighter;margin-bottom:1rem}.post-summary h2{margin-bottom:.5rem}aside{flex:0 0 35%;padding:2em 2em 0;text-align:center}aside h3{font-size:20px;margin-bottom:1em;margin-top:2em}@media (max-width:991px){.blog-container{display:block}.blog-container section{border-right:none;padding-right:0}.post-summary:last-child{border-bottom:1px solid #d3d3d3;margin-bottom:0;padding-bottom:3em}aside{padding-top:3em;margin:auto;width:90%}}@media (max-width:640px){aside{padding:3em 0;width:100%}}@media (max-width:320px){.post-summary h2{font-size:22px}.post-summary p{font-size:16px}}button{background:#1d7eb5;border:none;border-radius:25px;color:#fff;font-size:16px;padding:.5em 1em}button:focus{outline:0}button:hover{background:orange}.app-container{margin-left:auto;margin-right:auto;padding:2em 2em 1em}header{border-bottom:1px solid #d3d3d3;display:block;padding:2em 0;text-align:center;width:100%}h1{font-size:40px;margin:0}a,button{cursor:pointer}main{min-height:calc(100vh - 70px)}footer{font-size:14px;height:50px;margin-top:1em}@media (max-width:991px){.app-container{padding:2em 5em}}@media (max-width:414px){.app-container{padding:2em 3em}}@media (max-width:320px){header{padding:.5em 0}h1{font-size:30px;margin-bottom:.3em}p{font-size:16px}}</style><meta name="generator" content="Gatsby 2.32.8"/><link rel="icon" href="/favicon-32x32.png?v=69676b1cd1e90326680ee538b891943d" type="image/png"/><link rel="manifest" href="/manifest.webmanifest" crossorigin="anonymous"/><meta name="theme-color" content="#a2466c"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=69676b1cd1e90326680ee538b891943d"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=69676b1cd1e90326680ee538b891943d"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=69676b1cd1e90326680ee538b891943d"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=69676b1cd1e90326680ee538b891943d"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=69676b1cd1e90326680ee538b891943d"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=69676b1cd1e90326680ee538b891943d"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=69676b1cd1e90326680ee538b891943d"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=69676b1cd1e90326680ee538b891943d"/><title data-react-helmet="true">Tracking Events with Tag Manager</title><meta data-react-helmet="true" name="description" content="Learn how to set up tags and triggers to collect useful data from your website"/><meta data-react-helmet="true" property="og:title" content="Tracking Events with Tag Manager"/><meta data-react-helmet="true" property="og:description" content="Learn how to set up tags and triggers to collect useful data from your website"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary_large_image"/><meta data-react-helmet="true" name="twitter:creator" content="Gaurav Gaur"/><meta data-react-helmet="true" name="twitter:title" content="Tracking Events with Tag Manager"/><meta data-react-helmet="true" name="twitter:description" content="Learn how to set up tags and triggers to collect useful data from your website"/><meta data-react-helmet="true" name="twitter:image" content="http://localhost:9000/tracking-events-with-tag-manager/twitter-card.jpg"/><link rel="sitemap" type="application/xml" href="/sitemap.xml"/><link rel="preconnect" href="https://www.google-analytics.com"/><link rel="dns-prefetch" href="https://www.google-analytics.com"/><script>
+  
+  
+  if(true) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  }
+  if (typeof ga === "function") {
+    ga('create', 'UA-162427596-1', 'auto', {});
+      
+      
+      
+      
+      
+      }</script><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= 'https://www.googletagmanager.com/gtm.js?id='+i+dl+'';f.parentNode.insertBefore(j,f); })(window,document,'script','dataLayer', 'GTM');</script><link as="script" rel="preload" href="/webpack-runtime-892112997162adc17189.js"/><link as="script" rel="preload" href="/framework-d585a04b7d285a7760d6.js"/><link as="script" rel="preload" href="/styles-8fab2804fb6f85b824b6.js"/><link as="script" rel="preload" href="/app-8bf6956f6c4b1fe201ec.js"/><link as="script" rel="preload" href="/component---src-templates-post-js-2ae9184ec71fb06f7f03.js"/><link as="fetch" rel="preload" href="/page-data/tracking-events-with-tag-manager/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/852313850.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous"/></head><body><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM" height="0" width="0" style="display: none; visibility: hidden" aria-hidden="true"></iframe></noscript><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div class="app-container"><header><h1>Tracking Events with Tag Manager</h1><p>Variables, Tags, and Triggers, Oh My!</p></header><main><section class="posts"><p class="date">June 15, 2019</p><div><p>Tag Manager is an incredibly useful tool for tracking events on your site. The only problem is, if you’ve never used it before, it isn’t very clear how to use it or how to tie all the pieces together. I know it took me a good amount of experimenting before I reached a point where the setup started to make sense to me. If you don’t already have a Tag Manager account I recommend reading <a href="http://www.rachellerathbone.com/create-tag-manager-account">Setting Up a Tag Manager Account</a>. You’ll also need to make sure you have a Google Analytics account as GA is where you’ll be able to view all the data created by your Tag Manager Tag.</p>
+<p>Navigate to the Tag Manager Dashboard so that we can walk through the 3 following steps:
+Configuring Built-In Variables and Creating a New Variable
+Creating Our First Tag
+Creating Our First Trigger</p>
+<p>I’ll be walking through the flow using a blog I created for [LINK TO COURSE]. If you’re taking the course you’ll simply be able to do exactly as I do - we’ll be adding an event to the ‘Read more’ buttons so we can track the number of users who navigate their way to a post from the home page. For those of you who have organically found your way here, the process should be pretty easy to modify to something on your own site that you would like to track.</p>
+<br/>
+<h3>Configuring Built-In Variables and Creating a New Variable</h3>
+<p>Tag Manager comes with a number of built-in variables that you can utilize to easily track events on your site. However, in order to use any of them for a tag or a trigger, they first need to be activated. In order to do this, select ‘Variables’ from the panel on the left side of the screen and then click ‘Configure’.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/236ad74a130623d3086d1b39d7b45108/c50e3/configure-variables.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 25.675675675675674%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAFCAIAAADKYVtkAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAqklEQVQY03VOawuDMAzs//9tYx/3+CIIroJa0aavpK9Fx0QGO65JKHeXiGGYXlKuGpwP1jkwxvtQat3I+Axnpohq7h+tloMwluGIKATMuWR+pcQYCWmrP0BiQa01l5pyFuM0q3nRwAm+fsE2RHYT7thce+OSUvpoOEV0nRwnxWYwzjmvNQCYGFmT/5GjF0BtSdwuzf3atM9ercFZi/u1xwnHnvMPYcBYrKc3Nwki5WnlnHkAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Configure Variables"
+        title="Configure Variables"
+        src="/static/236ad74a130623d3086d1b39d7b45108/fcda8/configure-variables.png"
+        srcset="/static/236ad74a130623d3086d1b39d7b45108/12f09/configure-variables.png 148w,
+/static/236ad74a130623d3086d1b39d7b45108/e4a3f/configure-variables.png 295w,
+/static/236ad74a130623d3086d1b39d7b45108/fcda8/configure-variables.png 590w,
+/static/236ad74a130623d3086d1b39d7b45108/efc66/configure-variables.png 885w,
+/static/236ad74a130623d3086d1b39d7b45108/c83ae/configure-variables.png 1180w,
+/static/236ad74a130623d3086d1b39d7b45108/c50e3/configure-variables.png 2442w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>Over time you may begin to use a number of the variable options available to you but for the purpose of this video we are going to select two: <code class="language-text">Click Element</code> and <code class="language-text">Click ID</code>.</p>
+<p>Back in the Variables dashboard, click the ‘New’ button in the ‘User-Defined Variables’ box. Name the variable ‘GA Account’ and then click anywhere within the ‘Variable Configuration’ box. When the panel pops out on the right, scroll down until you see ‘Google Analytics Settings’ and click on that. Get your Google Analytics tracking ID from you GA account (or from our gatsby-config file is you’re doing my course) and hit save.</p>
+<br/>
+<h3>Creating Our First Tag</h3>
+<p>From the panel on the left select ‘Tags’ and then click the ’New’. Replace ‘Untitled Tag’ with whatever you think is an appropriate name for your tag. For anyone taking the Gatsby course, we’re going to call our tag ‘Read More of Post’. Once you’ve done that, click anywhere on the white box ‘Tag Configuration’ and when the panel slides out, select ‘Google Analytics: Universal Analytics’.</p>
+<p>If you’ve never used Tag Manager before, this is the part where it gets easy to get lost. There’s no docs, there’s no examples, so you’re basically left to stumble around on your own trying to figure out what goes where. Luckily for you, I’ve already spent that time banging my head against a wall and am here to help!</p>
+<p>From the ‘Track Type’ dropdown, select event. You’ll see several input fields. We’ll start by dealing with the dropdowns and then come back to the input fields. Leave ‘Non-Interaction Hit’ set to false, then click on the dropdown for ‘Google Analytics Settings’ and select the <code class="language-text">{{GA Account}}</code> variable that we created earlier.</p>
+<p>As for the input fields, you can basically put whatever you want in these fields. After you become familiar with Tag Manager you’ll most likely settle on your own way of structuring these fields but this is what I’ve found works for me:</p>
+<ul>
+<li><strong>Category</strong>: for this field you’ll want to select something that is an ‘umbrella’. Meaning, you want to be able to group events on your site into, well, categories. For example, the event we’ll be tracking in this example is a click event whereby a user clicks through to another page on our site. We don’t want each internal link to have it’s own category so it makes sense to put this event into a category called: ‘Clicks to internal link’. One thing to note here, Tag Manager is case sensitive so if you created an event at some point down the road and gave it the category ‘clicks to internal link’, when you checked the data in Google Analytics, you’d have some events falling into ‘Clicks to internal link’ and others into ‘clicks to internal link’.</li>
+<li><strong>Action</strong>: here we want to give a concise description of the action that we expect the user to take. For this example, let’s add ‘read more’ button from home page’.</li>
+<li><strong>Label</strong>: I typically use this input to track the page url so I know where the event was fired from. For this particular use case, however, we are going to leave this blank. We know this event will only be fired from the home page so tracking the url here would be redundant.</li>
+<li><strong>Value</strong>: I vary what goes on this field depending on what I want to pass through to Google Analytics. In the case of our ‘Read more’ button, we are going to use <code class="language-text">{{CLICK ID}}</code> and add an id attribute to our button, set to <code class="language-text">id={</code>data::${post.node.fields.slug}<code class="language-text">}</code> so we know which posts users have clicked through to. A better option here would be to use <code class="language-text">{{Click URL}}</code> instead of an id or class as this would make our tag less brittle. Unfortunately, with the way our button is sitting inside the Gatsby Link component, we don’t have access to the url from the button itself and if we move our data-gtm attribute to the Link element itself, the tag will only fire if a user clicks directly on the words ‘Read more’. Using classes and ids for tracking isn’t the best practice because there is potential for these to be accidentally removed during a refactor if someone checks the class/id and doesn’t see it being used for styling. However, sometimes using ids and classes are necessary but at least try to indicate in some way that it’s being used for something other than styling. This is why we’ve prefixed our ID with ‘data::’. Fortunately, if our ID was deleted at some point our tag wouldn’t break but we would lose some of the data we were hoping to collect.</li>
+</ul>
+<p>You’re tag should look like this:
+<span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/b121a26ec1a75df219bd64af4273c0bb/eee07/tag.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 77.70270270270271%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAYAAAAWGF8bAAAACXBIWXMAABYlAAAWJQFJUiTwAAAA/ElEQVQ4y6VUW5KEIAzk/kfVFQKiuCJkk2BqnJ+ZFVPVRdTQ5m1KsghgcRhGnKYJrbXonMNt27DWiqUUQv2AIna/+y66OZLHZYkYQsB5nklfhCwfhxj+F8dpbxwErPgu/OF6fpeXnUnrKuw5ZznZbf2bkt6B4bx5HwheSNX9K9kdMQBechdjlBdMxs/dhFKA3ELeqVI7nax3EzoHEq7i6m0XoebrWmH2tJuwXcLWwKRwuDEuT0J2uFLr6GVuaH7uJow0GTwdOkKcAi7Uo7Zp/Yct9Pqaz3vTchKGMFOISaqbUjqXwQNCAEAG96LKI8Jx/JG1patrIvDm6c3hH1Xu8cLyzouiAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Tag"
+        title="Tag"
+        src="/static/b121a26ec1a75df219bd64af4273c0bb/fcda8/tag.png"
+        srcset="/static/b121a26ec1a75df219bd64af4273c0bb/12f09/tag.png 148w,
+/static/b121a26ec1a75df219bd64af4273c0bb/e4a3f/tag.png 295w,
+/static/b121a26ec1a75df219bd64af4273c0bb/fcda8/tag.png 590w,
+/static/b121a26ec1a75df219bd64af4273c0bb/efc66/tag.png 885w,
+/static/b121a26ec1a75df219bd64af4273c0bb/c83ae/tag.png 1180w,
+/static/b121a26ec1a75df219bd64af4273c0bb/eee07/tag.png 1628w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>Hit save and, when the modal pops up, click ‘Add Trigger’, followed by the + sign.</p>
+<p>Creating Our First Trigger
+Start by naming your trigger with the same name you used for your tag: ‘Read More of Post’. You may not always follow this convention but it’s what we are doing in this instance. Click anywhere inside the ‘Tag Configuration’ box and from the panel that slides out select ‘All Elements’.</p>
+<p>From the next screen click on ‘Some Clicks’ and then do the following:
+First dropdown: Click Element
+Second dropdown: matches CSS selector
+Input: [data-gtm=“read-more”]</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/09f9e68dd7d14a414c0e7dc2df1a2343/d1882/trigger.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 18.243243243243242%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAECAYAAACOXx+WAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAh0lEQVQY042P2w7DIAxD+f9vnUrKJQQCuIR1kybtoZEsEU5ijAvhRMoF0gZUFWMM/Ks55yO5aIaseJGA/AFm3sCMp+kefFouxoicE1oV1FohIqtnxJQQQoBxu/sYa+97rjVdauir/0l4eI9SCizEuJPZ183IDIlO8OZvZmfbCYsT0fcxY31MXGvKOmBmEBzYAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Trigger"
+        title="Trigger"
+        src="/static/09f9e68dd7d14a414c0e7dc2df1a2343/fcda8/trigger.png"
+        srcset="/static/09f9e68dd7d14a414c0e7dc2df1a2343/12f09/trigger.png 148w,
+/static/09f9e68dd7d14a414c0e7dc2df1a2343/e4a3f/trigger.png 295w,
+/static/09f9e68dd7d14a414c0e7dc2df1a2343/fcda8/trigger.png 590w,
+/static/09f9e68dd7d14a414c0e7dc2df1a2343/efc66/trigger.png 885w,
+/static/09f9e68dd7d14a414c0e7dc2df1a2343/c83ae/trigger.png 1180w,
+/static/09f9e68dd7d14a414c0e7dc2df1a2343/d1882/trigger.png 1562w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>I recommend using this convention for your triggers whenever possible. Usually, if a developer see’s an HTML attribute prefixed with <code class="language-text">data-</code> they know it’s being used for tracking or testing and won’t just go ahead and delete it. On the other hand, if you were to use a class name or ID here, you run the risk of it being removed during a code clean up, as I mentioned earlier. However, unlike simply losing a little bit of data from one field like in the case of our tag, if your trigger was relying on an ID or class name that was deleted, the trigger would stop firing and you would lose all data for that event.</p>
+<p>Currently we don’t have any data-gtm tags in our code so take a moment to go to your text editor and that to the element you need to attach it to. For anyone doing the Gatsby course, you’ll want to add that to the ‘Read more’ button in <code class="language-text">pages/index.js</code>.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/5cb5b99738e36d42356d20c5dc41c117/71ba4/gtm-tag.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 2.7027027027027026%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAABCAYAAADeko4lAAAACXBIWXMAABYlAAAWJQFJUiTwAAAASklEQVQI1w3JOQ7AIBDAwLwlijiXQ8sikQbl/59yKNyMr5E9s0RMIuIeUjdiVTQdl4BzAVkfWed5g/ZuUlPEFuUUa6euze0TapMfw+Ae8SAPoA8AAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Gtm Tag"
+        title="Gtm Tag"
+        src="/static/5cb5b99738e36d42356d20c5dc41c117/fcda8/gtm-tag.png"
+        srcset="/static/5cb5b99738e36d42356d20c5dc41c117/12f09/gtm-tag.png 148w,
+/static/5cb5b99738e36d42356d20c5dc41c117/e4a3f/gtm-tag.png 295w,
+/static/5cb5b99738e36d42356d20c5dc41c117/fcda8/gtm-tag.png 590w,
+/static/5cb5b99738e36d42356d20c5dc41c117/efc66/gtm-tag.png 885w,
+/static/5cb5b99738e36d42356d20c5dc41c117/c83ae/gtm-tag.png 1180w,
+/static/5cb5b99738e36d42356d20c5dc41c117/71ba4/gtm-tag.png 1870w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>Click save. When that view collapses click save for the tag. Back in the dashboard view you should see the following:</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/4aae8c20ed36fd6c596abb78a0dbbd6c/d43b4/dashboard-view.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 7.4324324324324325%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAABCAYAAADeko4lAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAR0lEQVQI1y3FSw6AIAxAQe9/O8/gQqJC5SOYmvYZE2cz0/04sRm5G2UY5s7H/1WVNQRiStTWOHNBR2e5nDlUZN84YkJEMDNeTYpNR00ntMgAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Dashboard View"
+        title="Dashboard View"
+        src="/static/4aae8c20ed36fd6c596abb78a0dbbd6c/fcda8/dashboard-view.png"
+        srcset="/static/4aae8c20ed36fd6c596abb78a0dbbd6c/12f09/dashboard-view.png 148w,
+/static/4aae8c20ed36fd6c596abb78a0dbbd6c/e4a3f/dashboard-view.png 295w,
+/static/4aae8c20ed36fd6c596abb78a0dbbd6c/fcda8/dashboard-view.png 590w,
+/static/4aae8c20ed36fd6c596abb78a0dbbd6c/efc66/dashboard-view.png 885w,
+/static/4aae8c20ed36fd6c596abb78a0dbbd6c/c83ae/dashboard-view.png 1180w,
+/static/4aae8c20ed36fd6c596abb78a0dbbd6c/d43b4/dashboard-view.png 1202w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>If you can’t see the trigger listed trying refreshing your page and it should show up.</p>
+<br/>
+<h3>Testing the Trigger</h3>
+<p>Make sure your app is running and then click ‘Preview’ from the dashboard view in Tag Manager.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/a81d7d4e0bb5bb44d146f3d12dba2164/6d2da/preview.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 10.135135135135135%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAACCAYAAABYBvyLAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAiElEQVQI1yXIuw3CMBgAYTZDDIIQIzAGYgQUWjqWoKFBYgEKKIHEjh+xY//2gUjxSaeb+Sh0TuiHScpCCIEY49/UI2NKiAh2yCiXoQq3R2B96NgcFct9y+nqmfmx8jKF1k1SLhhj0brHOofSGmPt72dqLWgvPNtMKYXLPbLYfVg1ivn2TXP2fAHTQpPXiw/V/wAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Preview"
+        title="Preview"
+        src="/static/a81d7d4e0bb5bb44d146f3d12dba2164/fcda8/preview.png"
+        srcset="/static/a81d7d4e0bb5bb44d146f3d12dba2164/12f09/preview.png 148w,
+/static/a81d7d4e0bb5bb44d146f3d12dba2164/e4a3f/preview.png 295w,
+/static/a81d7d4e0bb5bb44d146f3d12dba2164/fcda8/preview.png 590w,
+/static/a81d7d4e0bb5bb44d146f3d12dba2164/efc66/preview.png 885w,
+/static/a81d7d4e0bb5bb44d146f3d12dba2164/6d2da/preview.png 936w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>When you go to your app in the browser you should see the Tag Manager console with our new tag listed under ‘Tags Not Fired On This Page’:</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/dbe318bf8953e0bd272f163161bb93d6/c02c7/tm-console.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 23.64864864864865%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAFCAYAAABFA8wzAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAiklEQVQY05WQyxICIQwE+f/vVMtCYHkly8JhDHiQRQ966OKRoQko6xxC8CAuiHSAmUDEMr6otaK1dqLvp5QG87pnVcoswoDL9Q67RSlk5PyGiD5Y6/Nc1XqgS2+PBO1IOIvmw98uWcUqSne8lyGynrDFgky7BHqQ/u+wlDLeboyB1hre+/Ena/BXnnp2gfSGC5XlAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Tag Manager Console"
+        title="Tag Manager Console"
+        src="/static/dbe318bf8953e0bd272f163161bb93d6/fcda8/tm-console.png"
+        srcset="/static/dbe318bf8953e0bd272f163161bb93d6/12f09/tm-console.png 148w,
+/static/dbe318bf8953e0bd272f163161bb93d6/e4a3f/tm-console.png 295w,
+/static/dbe318bf8953e0bd272f163161bb93d6/fcda8/tm-console.png 590w,
+/static/dbe318bf8953e0bd272f163161bb93d6/efc66/tm-console.png 885w,
+/static/dbe318bf8953e0bd272f163161bb93d6/c83ae/tm-console.png 1180w,
+/static/dbe318bf8953e0bd272f163161bb93d6/c02c7/tm-console.png 2472w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>Now all you need to do is test out the trigger by taking the action you want your users to take. For my Gatsby course followers, simply click one of the ‘Read more’ buttons. What you should see the tag move up under ‘Tags Fired On This Page’. If you then click on the tag and then show more you should see:</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/7dcbaa1a23970bb9179d3e6020e86d85/bb543/event-data.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 80.4054054054054%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAIAAACZeshMAAAACXBIWXMAABYlAAAWJQFJUiTwAAABu0lEQVQoz42TiW7bMAyG8/6PtXVdgxQpNgwDWqBxasvxEVu2ZNk6qGN0lGbN6gAjBEJRTPIj9WslpQSAEIJzzp/MGKOUstbCu+HeL9lqmib8NHwwrXXf95zzcRyFEHETlmwObtsW/8ZM8cgoTRuqpJx/4OFp+Xeuq8oY1nUdxg/DYAwymnEExiH8h60uYOgHzsU0iaIUSebq0pYFLihyW5U2J442C5VlJIyQ6J5/w8NXeNro9f28vn2BXz9NsnN5Gry7qhyxz6NGj2OvCv3ybN4S87a3B+JIFrr2kvoqGGeL5NjrGSUEa4ztOqDUKSRy/sY9zdifx4CJ2DCwgU9ScQ7WuZsD+3yELeR5vnvd7ZOkrllznJB4OfjU6dniVaPH4CRJsiw9HmlVYFPW+xsiYYzhPaGqopJQjIfDIU3TLMsIqShlHBWg4ayWmObkb2ATgtgkS2nVs6PwYBbJr4JjVqQv63qfpi0WbZqa5KLrYZIghNMaRaGVckqBMSt/IblMexoVpWPbaNbLHivXqu9t2xq8PK3nhySllRIf31+F+fgGcPP6At/v3I8nu320243bbuBxbdb3viD/SOUPq8Ggm5FDteUAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Tag Manager Data"
+        title="Tag Manager Data"
+        src="/static/7dcbaa1a23970bb9179d3e6020e86d85/fcda8/event-data.png"
+        srcset="/static/7dcbaa1a23970bb9179d3e6020e86d85/12f09/event-data.png 148w,
+/static/7dcbaa1a23970bb9179d3e6020e86d85/e4a3f/event-data.png 295w,
+/static/7dcbaa1a23970bb9179d3e6020e86d85/fcda8/event-data.png 590w,
+/static/7dcbaa1a23970bb9179d3e6020e86d85/efc66/event-data.png 885w,
+/static/7dcbaa1a23970bb9179d3e6020e86d85/c83ae/event-data.png 1180w,
+/static/7dcbaa1a23970bb9179d3e6020e86d85/bb543/event-data.png 1418w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>When you ship your changes you’ll be able to start following the event data you’re collecting in Google Analytics. One thing to note: GA will not display data for the day of. So if you have a day where you’re expecting to see a lot of traffic, an increase in a particular event being fired etc. you’ll have to wait until the following day before you can view any of that data.</p>
+<br/>
+<h3>Submitting Your Changes in Tag Manager</h3>
+<p>To see your changes take affect in the real world, head back to the Tag Manager dashboard, click ‘Leave Preview Mode’ under the orange box and then hit the blue submit button. Add whatever you feel is appropriate in the version name and description fields and then click ‘Submit’. That’s all there is to it!</p>
+<p>I hope you now have a good understanding of how to put tags and triggers together to get data about events you want to track on your site. Happy tracking :)</p></div><p class="post-navigation"><a rel="prev" href="/my-own-blog/">← <!-- -->My own blog</a></p><p class="post-navigation"><a rel="next" href="/filter-ip-google-analytics/">Filter Your IP in Google Analytics<!-- --> →</a></p></section></main><footer>© <!-- -->2021<!-- -->, Gaurav Gaur</footer></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/tracking-events-with-tag-manager/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-e4ff66ed5ec0b4bd2598.js"],"app":["/app-8bf6956f6c4b1fe201ec.js"],"component---node-modules-gatsby-plugin-offline-app-shell-js":["/component---node-modules-gatsby-plugin-offline-app-shell-js-eec87b46525379af865f.js"],"component---src-pages-404-js":["/component---src-pages-404-js-ff985ceb92d2a2ece435.js"],"component---src-pages-index-js":["/component---src-pages-index-js-1bebdc26c3eda8d7b2c4.js"],"component---src-templates-post-js":["/component---src-templates-post-js-2ae9184ec71fb06f7f03.js"]};/*]]>*/</script><script src="/polyfill-e4ff66ed5ec0b4bd2598.js" nomodule=""></script><script src="/component---src-templates-post-js-2ae9184ec71fb06f7f03.js" async=""></script><script src="/app-8bf6956f6c4b1fe201ec.js" async=""></script><script src="/styles-8fab2804fb6f85b824b6.js" async=""></script><script src="/framework-d585a04b7d285a7760d6.js" async=""></script><script src="/webpack-runtime-892112997162adc17189.js" async=""></script></body></html>
