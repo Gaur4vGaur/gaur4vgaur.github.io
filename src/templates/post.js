@@ -1,6 +1,6 @@
 import React from 'react';
 import { graphql, Link } from 'gatsby';
-import DOMPurify from 'dompurify';
+import sanitizeHtml from 'sanitize-html';
 
 // Components
 import Layout from '../components/layout';
@@ -13,17 +13,14 @@ class PostTemplate extends React.Component {
 		const post = this.props.data.markdownRemark;
 		const { previous, next, slug } = this.props.pageContext;
 
-		const createDOMPurify = require('dompurify');
-		const { JSDOM } = require('jsdom');
-		const window = new JSDOM('').window;
-		const DOMPurify = createDOMPurify(window);
-
 		return (
 			<Layout title={title} subtitle={subtitle}>
 				<SEO title={title} description={description || post.excerpt} slug={slug} />
 				<section className="posts">
 					<p className="date">{date}</p>
-					<div dangerouslySetInnerHTML={{ __html:  DOMPurify.sanitize(post.html) }} />
+					<div dangerouslySetInnerHTML={{ __html: sanitizeHtml(post.html, {
+						allowedTags: sanitizeHtml.defaults.allowedTags.concat([ 'img' ])
+					}) }} />
 					<p className="post-navigation">
 						{previous && (
 							<Link to={previous.fields.slug} rel="prev">
