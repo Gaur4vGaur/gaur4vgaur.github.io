@@ -18,7 +18,7 @@ class PostTemplate extends React.Component {
 				<SEO title={title} description={description || post.excerpt} slug={slug} />
 				<section className="posts">
 					<p className="date">{date}</p>
-					<div dangerouslySetInnerHTML={{ __html:  DOMPurify.sanitize(post.html) }} />
+					<div dangerouslySetInnerHTML={{ __html:  (post.html) }} />
 					<p className="post-navigation">
 						{previous && (
 							<Link to={previous.fields.slug} rel="prev">
