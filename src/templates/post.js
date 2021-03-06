@@ -13,6 +13,11 @@ class PostTemplate extends React.Component {
 		const post = this.props.data.markdownRemark;
 		const { previous, next, slug } = this.props.pageContext;
 
+		const createDOMPurify = require('dompurify');
+		const { JSDOM } = require('jsdom');
+		const window = new JSDOM('').window;
+		const DOMPurify = createDOMPurify(window);
+
 		return (
 			<Layout title={title} subtitle={subtitle}>
 				<SEO title={title} description={description || post.excerpt} slug={slug} />
