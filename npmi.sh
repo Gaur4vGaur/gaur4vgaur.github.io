@@ -9,7 +9,7 @@ git status
 git add .
 git commit -m "refresh on $(date)"
 
-git push origing master
+git push origin master
 
 npm run deploy
 echo 'site pubished, happy days!'
