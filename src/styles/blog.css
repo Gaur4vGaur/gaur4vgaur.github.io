@@ -1,0 +1,96 @@
+.blog-container {
+  display: flex;
+}
+
+.blog-container section {
+  border-left: 1px solid lightgrey;
+  flex: 0 0 65%;
+  padding: 2% 2% 5% 5%;
+}
+
+.post-summary {
+  margin-bottom: 2%;
+}
+
+.post-summary p:first-child {
+  color: #a0a0a0;
+  font-size: 75%;
+  font-weight: lighter;
+  margin-bottom: 0.2%;
+}
+
+.post-summary .content p {
+  color: #333;
+  font-size: 18px;
+  font-weight: lighter;
+  margin-bottom: 1rem;
+}
+
+.post-summary h2 {
+  margin-bottom: .5%;
+}
+
+aside {
+  flex: 0 0 20%;
+  padding: 5% 5% 0;
+  text-align: left;
+}
+
+aside h3 {
+  font-size: 120%;
+  margin-bottom: 1%;
+  margin-top: 10%;
+}
+
+aside a {
+  font-size: 90%;
+  margin-bottom: 1%;
+  margin-top: 1%;
+  color: black;
+}
+
+
+/* ***********************************
+MEDIA QUERIES
+*********************************** */
+@media (max-width: 991px) {
+  .blog-container {
+    display: block;
+  }
+
+  .blog-container section {
+    border-right: none;
+    padding-right: 0;
+  }
+
+  .post-summary:last-child {
+    border-bottom: 1px solid lightgrey;
+    margin-bottom: 0;
+    padding-bottom: 3em;
+  }
+
+  aside {
+    padding-top: 3%;
+    margin: auto;
+    width: 90%;
+  }
+}
+
+/* Microsoft Lumia 550 */
+@media (max-width: 640px) {
+  aside {
+    padding: 3em 0;
+    width: 100%;
+  }
+}
+
+/* iPhone4 */
+@media (max-width: 320px) {
+  .post-summary h2 {
+    font-size: 22px;
+  }
+
+  .post-summary p {
+    font-size: 16px;
+  }
+}
