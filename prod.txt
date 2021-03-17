@@ -1,0 +1,118 @@
+Hi @fulfilment-architects, I currently own a lot of the CFC datasets in the data lake (e.g. cfcsytems_raw) - is there a more appropriate group/team that should own these in future?
+
+Hi @fulfilment-architects.
+We are trying to connect from Station Controller app running on SIT cloud to AWS Kinesis stream but we get HTTP request: Connection reset error. Is there some firewall blocking our requests? We have added Istio configuration allowing those connections to be established and it was working on SIT onPrem. Our Kinesis stream is running on cymes-sit.  Looking at https://architecture.pages.tech.lastmile.com/documentation/#/strategic-guidance/account-connections-guidance it should work. We have created issue for cloud platform team https://gitlab.ocado.tech/private-edge-cloud/support/-/issues/2185 as well.
+
+
+
+[Fulfilment Only] FYI For those of you trying to create your very first RDS or DynamoDB table in OTP.
+Watch out that when you create your application in Chancellor you MUST use ‘recipe=create-application-cfc’ and ‘permission=base’. See: https://chancellor.pages.tech.lastmile.com/docs/api/provisioning/#note-for-cfc
+[I’ll openly admit - I find that note hard to comprehend myself! If anyone does successfully navigate creating an application and deploying a cloudformation template that works - please do share the calls and files you used to help others in future]
+It may be very tempting to choose the `onpremise` option but that was actually designed for Ocean apps way way way back in the day and not us!
+I’ve asked CloudServices if they can re-word and clarify the documentation :slightly_smiling_face: :fingers_crossed:
+
+
+
+
+
+
+replied to a thread:
+[Fulfilment Only] FYI For those of you trying to create your very first RDS or DynamoDB table in OTP.…
+Many thanks to @grzegorz.glab for his support - we’ve added a note here in the migration guide:
+https://docs.google.com/document/d/1AEYqq9p7AmceAs6ExQ8EhYt9RLEzXVkYFuCHS_YOc_I/edit#heading=h.s566jprpsti6
+That to me at least makes a whole lot more sense that the Chancellor docs (They have a backlog item to improve this note hopefully soon).
+View newer replies
+
+
+@fulfilment-architects I've opened an MR on the End State Architecture docs to fix a broken link and offer some copy suggestions.   Certainly take any suggestions with a grain of salt: https://gitlab.ocado.tech/architecture/documentation/-/merge_requests/64
+
+1
+
+1
+
+
+
+
+
+We had some ideas suggested to us recently about ways in which we could better engage individuals in the stream - wanted to seek opinions on whether people would use them - what for - and what other ideas people might have? Feel free to respond in thread, via your own creative use of emojis etc, or not at all! (It’s all data that helps us know what is valuable :slightly_smiling_face:)
+Idea 1: Advertised hours where you could ‘Pair Program with XXXXXX’ <Insert your favourite architecture member here :slightly_smiling_face:>. You bring the problem - we help you code the solution.
+Goal: All our members are from engineering backgrounds with a wealth of experience, techniques and successful ways of working that can just rub off as we watch each other work - many of us are not from Fulfilment backgrounds and this is a great way for us to learn too! We are thinking (but maybe wrongly? You tell us!) that this would be most beneficial to E1-E2's, alongside those new to JarJar/OTP.
+Idea 2: Sponsored Project Mentoring. You want to go learn something in a truly deep fashion - spend 20%+ of your time for a few weeks or the likes really finding important answers to whether this is going to be the next big thing, the pro’s and con’s of it at a deep level or if it is just another niche tool you may one day use but not right now. We help you build a business case for sponsorship by your TL or similar, then we work with you to ensure that your time is spent valuably by making sure you are answering the right questions in a way that is scientific, fair and unbiased, and provides you the most deep learning.
+Goal: Primarily - Making you better! If it brings broader adoption of great patterns, techniques etc that is a side bonus :slightly_smiling_face: (edited) 
+
+1 reply
+27 days agoView thread
+
+Hi @fulfilment-architects, I was redirected to you by Beholder team. TL;DR: We would like to fully get rid of Prometheus and only concern is RAG. What is a plan for RAG in context of migration to OTP?
+Grzegorz Głąb
+1. no, we do not have as it not possible on grafana to check frequently given dashboard is used. Also the RAG was a result of EP, which, as I understand, still holds. For any changes in that I recommend to speak to Product group and/or Fulfilments Architects
+2. For OTP related kitemarks bet to ask Fulfilment Architects
+From a thread in #beholder | Feb 19th | View reply
+
+
+
+
+was added to #osp-cfc-architecture by Piotr Żak.
+
+Hi @fulfilment-architects. We might have touched that subject already, but I have not found anything on that so maybe it is a good idea to have it here. There is a problem that we currently bump in every now and then and it is related to the fact that in  old phoenix api containers and its compartments are versioned separately. You can check an example reported here. It seems very likely that we will came across that with new versioning scheme even more often than now (as multiple parameters will be versioned separately). So in a nutshell the scenario is this - we get two updates of a container:
+one for parameter A to be changed from let’s say 0 to 1
+one for parameter B to be changed from 0 to 1
+When we process those due to independent versioning of parameters both updates will be stored in DB properly and container state will be proper, but while we proces we do send events to DataLake so if both updates will come in the same time and read container state from the DB before the other ones is processed, we end up with two events being sent to DL - one with A=1 B=0 and the other one with A=0 B=1.
+We can overcome this using similarly like Store pick using compare and swap mechanism. As one of these updates will be first, the other one can check container version and if it is higher than what we fetched at the beginning of the process, we will go back to fetching container state and process it all over again.
+The question is whether this is acceptable in state service? While performance penalty in store pick may not be such a big deal, it may be a problem with us since i imagine the amount of operations will be significantly bigger.
+Ot maybe we should rethink how DataLake is getting information from us?
+What are your thoughts on this one? (edited) 
+
+
+
+
++
+
+
+Hi all! We're looking to run a small trial of mentoring, and we have had a great response - especially from people looking for mentoring in software engineering, but we have only had a couple of mentors come forward. Posting here in case there are some enthusiastic E3s who might be willing to support people in their development through mentoring. More details on our website, but also happy to chat if anyone has any questions!
+Andy Phelan
+Internal Mentoring Trail
+Applications for the mentoring programme will close on Friday - if you are interested, please register your interest before then. It has been great to see quite a few applications come through already. We are still looking for more mentors, especially in product management and software engineering. If you want more information, please look here on our website.
+If you are interested in being a mentee, please complete this google form.
+If you are interested in being a mentor, please complete this google form.
+Posted in #ot-academy | Feb 23rd | View message
+
+1
+
+
+
+I know many teams aren’t at the point yet where their build processes are self-handled in Gitlab - but for when you do get there and just as interesting reading around precisely what does ‘Wave & Bake’ mean?
+https://ocado.slack.com/archives/CD7AM4FLY/p1614273417020800
+Paul Sweetman
+How to implement Wave and Bake
+Some teams have asked for more guidance on how to implement the Wave and Bake deployment model as described in the Development Handbook.
+Here’s a set of instructions you can use for application and config deployments:
+1. Split the Production deployment stage of your GitLab CI/CD pipeline into a series of stages. Each stage corresponds to a wave. Each stage has one or more GitLab CI/CD jobs that run in parallel - each job deploys the code to a single Production environment.
+2. Use the when: delayed GitLab CI/CD feature to insert a delay between each job. This gives you the bake.
+3. If you have long bake periods, you can optionally use GitLab freeze periods to ensure… Show more
+Posted in #eng-prod-sig | Feb 25th | View message
+
+
+
+
+
+Hi @fulfilment-architects, we're planing migration of our apps to CFC ECS and would like to review with you few of our assumptions and ideas. Can we schedule a meet some time next week?
+
+1
+
+
+
+
+
+Hi @fulfilment-architects are you able to provide advise on which strategies solutions are allowed for load balancing in terms of rewriting the systems under CGC100 initiatives?
+
+
+
+Hi, could @fulfilment-architects (or someone on the channel) provide me with the copy of a template ADR that I can access without vpn? I've been given a link but couldn't access it so assumed it's the vpn or lack of thereof in my case. Currently no time to upgrade my ubuntu and get vpn so would like to see the doc structure and start filling it in offline and will sort out access later on.
+
+Hi @fulfilment-architects,
+As I mentioned Monday, we (@jetnor.rrustaj and I from the MIB team) are in the process of migrating one of our databases from Postgres running on an k8 pod to AWS RDS. We have our new RDS instance in SIT and this is nice. Now we want to connect our app - a single point of contact, pgbouncer - with the database and we need some assistance... Can you guide us with:
+How to make sure the RDS instance is reachable from our pgbouncer app.
+Do we need anything beyond the credentials and key    rotation scheme by the beholder team?
+Anything else we have overlooked :slightly_smiling_face:
+Thanks! (edited) 
