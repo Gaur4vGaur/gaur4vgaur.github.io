@@ -1,1 +1,0 @@
-{"data":{"allMarkdownRemark":{"totalCount":1,"edges":[{"node":{"fields":{"slug":"/java/java-benchmarking/","readingTime":{"text":"2 min read"}},"frontmatter":{"title":"Microbenchmarking with jvm","date":"April 02, 2021","description":"A quick hands-on lesson to learn about JMH (Java Microbenchmark Harness) and when to use it."}}}]}},"pageContext":{"tag":"jvm"}}
