@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "gatsby-image": "^3.2.0",
+    "sanitize-html": "^2.3.3"
+  }
+}
