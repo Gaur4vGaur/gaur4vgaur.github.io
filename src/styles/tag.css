@@ -1,0 +1,16 @@
+.tag-heading {
+    color: #a0a0a0;
+    font-weight: bold;
+    margin-bottom: 0.2%;
+    text-align: center;
+}
+
+.tag-summary {
+    text-align: center;
+    font-size: 80%;
+}
+
+.tag-ul {
+    padding-top: 2rem;
+    list-style-type: none;
+}
