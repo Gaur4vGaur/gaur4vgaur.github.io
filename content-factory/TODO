@@ -1,0 +1,28 @@
+Things to do
+
+# pages missing meta title
+# enhance website description - 50-160 characters
+# add contact me page with twitter and github
+# cookie warnings in browser
+
+Blogs topics
+# Memory in Java
+# Internals of Java Hashmap -> like if hash is constant, what opitmisation do java does, converting linkedlist in java hashmap to binary tree
+# java patterns - confusing or similar patterns
+# software engineering principles
+
+
+# sources
+papers - https://www.ijtsrd.com/
+software developments - https://pipiwiki.com/wiki/Software_development
+
+https://www.namecheap.com/support/knowledgebase/article.aspx/9645/2208/how-do-i-link-my-domain-to-github-pages/
+
+
+# tags
+- publish tags
+- remove unnecessary tags such as
+    functional-programming and scala
+    java mircrobenchmark and microbencharmking
+    add prgramming for java
+    add tutorial to microbenchmarking
